@@ -1,0 +1,19 @@
+---
+title: "Protocols"
+author: "Gherman Novakovsky"
+date: "2024-09-29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## What I did
+
+* Alignment of reference sequences;
+* Building a phylogenetic tree using FastTree;
+* Setting up igraph for network manipulation;
+* Setting up cytoscape for visualization;
+* Developing and implementing phylo diffusion algorithm for propagating metadata info in the network;
+* Performing ancestral sampling using GRASP to get ancestral sequences from the ancestral nodes;
