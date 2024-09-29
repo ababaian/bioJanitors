@@ -1,0 +1,17 @@
+Protocol of computational chemistry aspect in biojanitors Team
+1.	Literature search was first conducted to understand chemical basis behind degradation of PET (polyethylene terephthalate).
+2.	From the published literature on Ideonella sakaiensis (IsPETase), three proximal and critical residues supports the catalytic enzymatic process to degrade PET. 
+3.	IsPETase was first used as receptor to conduct molecular docking against PET dimer. It has shown binding site and free binding energy supporting PET’s docking into IsPETase, particularly in the three amino acids pocket. 
+4.	Molecular docking was also performed on a known organism with PETase activity such as Pseudomonas mendocina lipase). It too showed reasonable binding site and free binding energy.
+5.	Then, using the AlphaFold3 predictions based on LLMs and phylogenic data, a total of 24 sequences were predicted as PDB files. 
+6.	Of these, applying the knowledge of cleft distance, the likelihood of interaction between PETs and three amino acids pocket were conducted. With more cleft distance, PETs were more likely to interact with the PETases. 
+7.	Finally, with further progress in LLM and phylofusion, molecular docking of ancestry PETase with PET was conducted. In particular, short root mean square difference between poses were noted.
+
+Technical protocol on molecular docking
+1.	Acquire PDB filed either through Protein Data Bank or converting from other viable file types using appropriate software (ex., openbabel) 
+2.	Load PDB file into Discovery Studio Visualizer to locate receptor coordinates or even assess if proper binding site exists. 
+3.	If binding is viable, use Chimera to conduct surface binding analysis (require Autodock VINA to operate the function). 
+4.	Conduct Autodock VINA docking via Cygwin64 Terminal & split the multiple docking poses into separate files. 
+5.	Utilize the results from molecular docking such as free binding energy to guide next steps.
+
+
